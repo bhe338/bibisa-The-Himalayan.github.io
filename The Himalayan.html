@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn.britannica.com/74/114874-050-6E04C88C/North-Face-Mount-Everest-Tibet-Autonomous-Region.jpg');
+            font-style: italic;
+            color: black;
+        }
+
+        #menu {
+            color: black;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px;
+            color: white;
+            text-align: center;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-image {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #333;
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        form.order-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin: 10px 0;
+        }
+
+        input {
+            width: 60px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .animate {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .mail-box {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Himalayan</title>
+</head>
+
+<body>
+    <header>
+        <h1>The Himalayan!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="background-image">
+        <h2>Welcome to The Himalayan!</h2>
+        <img src="https://myrepublica.nagariknetwork.com/uploads/media/2019/March/Nepali-cuisine-.jpg" alt="Welcome to The Himalayan">
+        <p>Delicious food from the land of Everest cooked with love and served with a smile</p>
+    </section>
+
+    <section id="menu" class="background-image">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <img src="https://www.altitudehimalaya.com/media/files/Blog/Food/Most-Popular-Nepalese-Foods.jpeg" alt="Menu Image">
+            <h3>Thakali Set</h3>
+            <p>The Thakali are the people originated from the Thak Khola region of the Mustang District in Nepal. Thakali meal consists of locally grown buckwheat, barley, millet, rice, maize, and dal. A kind of dal is also made from the dried, ground buckwheat leaves. Also, other special pickles, gundruk, and ghee are also included. Thakali meal is collectively made up of these all food items.<br> €10.99</p>
+            <form class="order-form">
+                <label for="dish1-quantity">Quantity:</label>
+                <input type="number" id="dish1-quantity" name="dish1-quantity" min="1" value="1">
+                <button type="submit">Add to Cart</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="background-image">
+        <img src="https://t3.ftcdn.net/jpg/02/61/98/24/360_F_261982444_jDzDlgClqQDc5DX47Qy4PSayvcn89vQi.jpg" alt="About Us Image">
+        <h2 class="black-text">About Us</h2>
+        <p style="color: black" style="font-size: 18px;">Learn more about our story and commitment to quality. We serve our customers with love. If you're looking for a delicious Nepali cuisine cooked with mothers love do visit us once!!</p>
+    </section>
+
+    <section id="contact" class="background-image animate">
+        <h2 class="black-text">Contact Us</h2>
+        <p>For inquiries and feedbacks, please contact us via mail.</
+            <div class="mail-box">
+                <p>Email: <a href="mailto:himalayanrestaurant2@gmail.com">himalayanrestaurant2@gmail.com</a></p>
+            </div>
+        </section> 
